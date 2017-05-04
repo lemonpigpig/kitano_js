@@ -1,0 +1,23 @@
+.Tags
+  &__List
+    list-style: none
+    margin: 0
+    overflow: hidden
+    padding: 0
+  .Tag
+    float: left
+    &::after
+      content: "\00a0"
+    // a
+    //   @include tag($teal)
+    // &_laravel, &_blade, &_eloquent, &_twig
+    //   a
+    //     @include tag($laravel-light)
+    // &_php
+    //   a
+    //     @include tag($php)
+    // &_vue, &_vuex, &_nuxt, &_javascript, &_axios, &_node
+    //   a
+    //     @include tag($vue-green)
+    a
+      @include tag($tag-default)

@@ -1,0 +1,37 @@
+*
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+
+html, body
+  height: 100%
+
+body
+  font-size: 1.4rem
+  background-color: $body-bg
+  color: $text-color
+
+#__nuxt
+  height: 100%
+
+.Default
+  min-height: 100%
+  position: relative
+  overflow: hidden
+
+.App-container
+  width: 80%
+  margin: 4rem auto 1rem auto
+  font-family: "Open Sans"
+  padding-bottom: 2rem
+  &_blur
+    opacity: .6
+    filter: blur(2px)
+
+.No-auth
+  display: flex
+  height: 50vh
+  justify-content: center
+  align-items: center
+  color: $laravel

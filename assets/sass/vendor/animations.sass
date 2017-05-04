@@ -1,0 +1,60 @@
+// Fade
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes fadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+// slide
+@keyframes slideIn
+  0%
+    height: 0
+    transition: all 0.5s ease-in
+  100%
+    height: 100%
+    transition: all 0.5s ease-in
+
+@keyframes slideOut
+  0%
+    height: 100%
+  100%
+    height: 0
+    transition: all 0.5s ease-out
+
+.fade-enter-active,
+.fadeIn,
+.fade-leave-active,
+.fadeOut,
+.slide-enter-active,
+.slideIn,
+.slide-leave-active,
+.slideOut
+  animation-duration: .5s
+  -webkit-animation-duration: .5s
+  animation-fill-mode: both
+  -webkit-animation-fill-mode: both
+.fade-enter-active,
+.fadeIn
+  animation-name: fadeIn
+  -webkit-animation-name: fadeIn
+
+.fade-leave-active,
+.fadeOut
+  animation-name: fadeOut
+  -webkit-animation-name: fadeOut
+
+.slide-enter-active,
+.slideIn
+  -webkit-animation-name: slideIn
+  animation-name: slideIn
+
+.slide-leave-active,
+.slideOut
+  -webkit-animation-name: slideOut
+  animation-name: slideOut
